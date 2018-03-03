@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tareas de Christian</title>
+    <meta name="description" content="Ingeniero Industrial. IT Project Manager. Web Developer. Aprendiendo de las últimas tecnologías. ">
+    <link rel="canonical" href="http://maul.rockstardevops.com/tasks.html">
+	<meta name="keywords" content="Ingeniero, IT, Project, Web, Developer, Technology, HTML, js, css, python">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" type="text/css" href="styles/grid.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar">
+		<ul class="navbar-list">
+			<li class="navbar-item">
+                    <a href="http://maul.rockstardevops.com/index.html">Portada</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="http://maul.rockstardevops.com/index.html#quiensoy">Quién soy</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="http://maul.rockstardevops.com/index.html#estudios">Estudios</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="http://maul.rockstardevops.com/index.html#experiencia">Experiencia</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="http://maul.rockstardevops.com/index.html#sobremi">Sobre mi</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="http://maul.rockstardevops.com/contact.html">Contacto</a>
+                </li>
+                <li class="navbar-item active">
+                    <a href="http://maul.rockstardevops.com/tasks.html">Tareas</a>
+                </li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<section class="row section-container">
+
+			<h2>Tareas</h2>
+
+			<div class="col-6">
+				<h3>Añadir nueva tarea</h3>
+				<form>
+					<input type="text" id="newTaskName" name="name" placeholder="Nueva tarea..." required>
+					<br>
+					<br>
+					<button id="sendNewTask">Enviar</button>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<h3>Tareas pendientes</h3>
+				<div class="loader"></div>
+				<div>
+					<ul id="taskContainer">
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<footer class="footer">
+		<a href="https://www.linkedin.com/in/christiangallego/" target="_blank">Christian Gallego</a>, 2017. Práctica HTML5, CSS3 &amp; JS
+	</footer>
+</body>
+<script src="./js/ajax.js"></script>
+</html>

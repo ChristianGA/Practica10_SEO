@@ -1,0 +1,468 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+@font-face{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.about-me{
+	order: 4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.about-me-header{
+	order: 1;
+	padding: 5px;
+}
+
+.video-about-me{
+	order: 2;
+}
+
+.career{
+	text-align: center;
+	color: darkgrey;
+	order: 2;
+	padding: 4px;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.contact{
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.vista{
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.contact > h2{
+	width: 400px;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.container2{
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+}
+
+
+.flip-img {
+	position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.back {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.logo-est-1:hover .front {
+    transform: rotateY();
+    -webkit-transform: rotateY(-180deg);
+}
+
+.logo-est-1:hover .back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+
+.footer {
+    background-color: #3498db;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > a{
+	text-decoration: none;
+	color: white;
+}
+
+.form {
+	order: 2;
+	display: flex;
+    padding: 0 20px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+.map{
+	order: 1;
+	width: 500px;
+}
+
+h3, h4{
+	text-align: center;
+}
+
+.job1{
+	display: flex;
+	order: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+}
+
+.job2{
+	display: flex;
+	order: 2;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+}
+
+.job3{
+	display: flex;
+	order: 3;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+}
+
+.job4{
+	display: flex;
+	order: 4;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+}
+
+.job5{
+	display: flex;
+	order: 5;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+}
+
+.logo-job {
+	height: 125px;
+}
+
+.logo-trab-1 > a > img{
+	height: 100px;
+}
+
+.logo-trab-2 > a > img{
+	height: 120px;
+}
+
+.logo-trab-3 > a > img{
+	height: 150px;
+}
+
+.logo-trab-4 > a > img{
+	height: 130px;
+}
+
+.logo-trab-5 > a > img{
+	height: 150px;
+}
+
+.logo-university{
+	height: 125px;
+}
+
+.logo-university img{
+	
+}
+
+.logo-est-1{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.logo-est-1 img{
+	border-radius: 50%;
+	height: 125px;
+}
+
+.logo-est-2 img{
+	height: 125px;
+}
+
+.logo-est-3 img{
+	width: 300px;
+}
+
+.navbar{
+	background-color: #3498db;
+	width: 100%;
+    position: fixed;
+    top: 0;
+	z-index: 1;
+}
+.navbar > .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    float: right;
+    font-size: 0;/*truco para que no exista separación blanca. Aquí = 0 y en el hijo el valor que queramos del tamaño de la fuente.*/
+}
+.navbar > .navbar-list > .navbar-item{
+	display: inline-block;
+    font-size: 16px; /*aquí el valor del tamaño que queremos */
+}
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+	transition: all 0.3s linear;
+}
+.navbar > .navbar-list > .navbar-item.active a {
+
+    background-color: darkgrey;
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    
+    background-color: darkgrey;
+}
+
+.photo-me{
+	order: 1;
+	display: flex;
+}
+
+.photo-me > img{
+	height: 150px;
+	width: 150px;
+	border-radius: 40%;
+}
+
+.position{
+	color: darkgrey;
+	padding: 4px;
+}
+
+.row-jobs{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.section-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-reverse {
+    background-color: white;
+    color: black;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.studies{
+	order: 2;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.study1{
+	order: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+	padding: 4px;	
+}
+
+.study1 img{
+	display: block;
+	margin: auto;
+}
+
+.study2{
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+	padding: 4px;	
+}
+
+.study3{
+	order: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+	padding: 4px;
+	
+}
+
+.title {
+	position: absolute;
+    left: 0;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #3498db;
+    font-family: 'Open Sans';
+    z-index: 1;
+	animation: titleAnimation 2s forwards;
+    animation-delay: 0.8s;
+    visibility: hidden;
+}
+
+.title-cite {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #3498db;
+    font-family: 'Open Sans';
+	opacity: 0;
+    animation: subtitleAnimation 3s forwards;
+    animation-delay: 1s;
+}
+
+.header > .title-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/cielo.jpg);
+    height: 100vh;
+    transition: background-size 0.5s;
+}
+
+.header > .title-img:hover {
+    background-size: 115% 115%;
+}
+
+.university{
+	text-align: center;
+	order: 1;
+	padding: 4px;
+}
+
+.who{
+	order: 1;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
+	border-color: #3498db;
+}
+
+.whoami{
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+
+.whoami-text{
+	padding: 5px;
+}
+
+.work-experience{
+	order: 3;
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#googleMap {
+    height: 400px;
+	width: 400px;
+}
+
+.form {
+    padding: 10px;
+	width: 400px;
+}
+
+.form .form-row {
+    padding: 10px;
+}
+
+input {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=button], input[type=submit], button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+button[disabled] {
+    opacity: 0.5;
+}
+
+@keyframes titleAnimation {
+    0% {font-size: 50px;}
+	25% {font-size: 100px;}
+    50% {font-size: 200px;}
+	75% {font-size: 150px;}
+    100% {font-size: 100px;
+          visibility: visible;}
+}
+
+@keyframes subtitleAnimation {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
